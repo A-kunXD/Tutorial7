@@ -4,7 +4,7 @@ public class Player{
     private String Name;
     private Integer Age;
     private String Type;
-    private Intege Stats;
+    private Integer[] Stats;
     
     public Player(String Name, Integer Age, String Type){
         this.Name= Name;
@@ -32,7 +32,13 @@ public class Player{
         }
     }
     public void getPerfomance(){
-
+        int max=-999;
+        for(int i=0;i<15;i++){
+            if (Stats[i]>max){
+                max=Stats[i];
+            }   
+        }
+        System.out.println("Best Performance: "+max);
     }
 
     

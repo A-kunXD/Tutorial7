@@ -1,24 +1,31 @@
 import java.util.Scanner;
 
 public class PlayerSelect {
-    public static void AddPlayer(){
 
+    private static String BestTwoBatmans;
+    private static String BestTwoBowlers;
+    private static String BestKeeper;
+
+
+
+    public static void AddPlayer(){
+        
     }
 
     public static void ViewPlayers(){
-
+        //System.out.println(Array);
     }
 
-    public static void BestBatsmans(){
-
+    public static void BestBatmans(){
+        System.out.println("Best two Batman are:  ");
     }
 
     public static void BestBowlers(){
-
+        System.out.println("Best two Bowlers are:  ");
     }
 
     public static void BestKeeper(){
-
+        System.out.println("Best Keeper is: ");
     }
 
     public static void main(String[] args) {
@@ -40,7 +47,7 @@ public class PlayerSelect {
                     ViewPlayers();
                     break;
                 case "B":
-                    BestBatsmans();
+                    BestBatmans();
                     break;
                 case "C":
                     BestBowlers();
